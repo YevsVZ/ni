@@ -7,7 +7,7 @@ local queue = {
 	"Cache",
 	"WaitForChannel",
 	"SummonDemon",
-	"DemonArmor",
+	"FelArmor",
 	"Immolate",
 	"BaneofDoom",
 	"Corruption",
@@ -257,9 +257,9 @@ local abilities = {
 			end
 		end
 	end,
-	["DemonArmor"] = function()
-		if ni.spell.available(spells.DemonArmor.id) and not ni.player.buff(spells.DemonArmor.id) then
-			ni.spell.cast(spells.DemonArmor.id)
+	["FelArmor"] = function()
+		if ni.spell.available(spells.FelArmor.id) and not ni.player.buff(spells.FelArmor.id) then
+			ni.spell.cast(spells.FelArmor.id)
 			return true
 		end
 	end,
